@@ -45,7 +45,7 @@ Contact information for your company.
 ## Setup Instructions
 
 1. Install Git on your computer.
-2. Clone the repository: `git clone https://github.com/your-username/tile-services.git`
+2. Clone the repository: [`git clone https://github.com/your-username/tile-services.git`](https://github.com/AnastasiiaSemeniukk/UG.github.io.git)
 3. Open the project in a text editor (VS Code, Sublime Text, etc.).
 4. Run the `index.html` file in a web browser.
 
