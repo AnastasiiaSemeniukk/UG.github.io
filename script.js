@@ -27,6 +27,12 @@
             });
         });
 
+
+document.getElementById('contactbtn').addEventListener('click', function() {
+    // Обробка подій при натисканні кнопки, наприклад, прокрутка до секції контактів
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
     
         const panels = document.querySelectorAll('.panel');
         let currentIndex = 0;
