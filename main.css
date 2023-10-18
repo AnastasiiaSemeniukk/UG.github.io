@@ -206,7 +206,7 @@ main {
 
  .about,
  .service { 
-     width: 100vw;
+    width: 100vw;
     background-color: #736f73;
     min-height: 50vh;
     display: flex;
@@ -220,7 +220,6 @@ main {
     border: 1px solid;
     margin: 20px 0;
     background-color: #736f73;
-    width: 100vw;
   }
 
   .contact {
@@ -346,4 +345,5 @@ p {
          background-color: #736f73;
          width: 100vw;
      }
+}
 
