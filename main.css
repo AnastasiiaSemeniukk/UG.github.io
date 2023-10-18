@@ -22,12 +22,14 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #272021;
+    padding: 15px; /* Added padding */
+    transition: .2s;
 }
 
 .logo {
     height: 55px;
     width: auto;
-    margin-left: 100px;
+    margin-left: 15px; /* Reduced margin */
 }
 
 .navlist {
@@ -36,12 +38,11 @@ header {
 
 .navlist a {
     color: #e5f1f6;
-    margin-left: 60px;
-    margin-right: 90px;
+    margin-left: 15px;
     font-size: 15px;
     font-weight: 400;
     border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
+    transition: all .55s ease;
 }
 
 .navlist a:hover {
@@ -58,7 +59,7 @@ header {
 
 .cta {
     color: #e5f1f6;
-    padding: 9px 25px;
+    padding: 9px 15px;
     background-color: #736f73;
     border: none;
     border-radius: 50px;
@@ -81,7 +82,7 @@ header {
     font-size: 20px;
     font-weight: 400;
     color: #e5f1f6;
-    margin: 20px;
+    margin: 20px; /* Removed duplicate margin property */
     font-weight: bold;
 }
 
@@ -98,68 +99,12 @@ header {
     color: #e5f1f6;
     font-size: 16px;
     line-height: 1.9;
-    margin: 20px;
+    margin: 20px; /* Removed duplicate margin property */
 }
 
 .mainpage-img {
-    width: 100%;
+    width: 750px;
     height: auto;
-}
-
-@media (max-width: 1535px) {
-    header {
-        padding: 15px;
-        transition: 0.2s;
-    }
-}
-
-@media (max-width: 1460px) {
-    section {
-        padding: 0 12%;
-        transition: 0.2s;
-    }
-}
-
-@media (max-width: 1340px) {
-    .mainpage-img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .mainpage-text h1 {
-        font-size: 75px;
-        margin: 0 0 30px;
-    }
-
-    .mainpage-text h3 {
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 1195px) {
-    section {
-        padding: 0 3%;
-        transition: 0.2s;
-    }
-
-    .mainpage-text {
-        padding-top: 115px;
-    }
-
-    .mainpage-img {
-        text-align: center;
-    }
-
-    .mainpage-img img {
-        width: 560px;
-        height: auto;
-    }
-
-    .mainpage {
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 990px) {
@@ -178,7 +123,7 @@ header {
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
-        transition: all 0.55s ease;
+        transition: all .55s ease;
     }
 
     .navlist a {
@@ -277,7 +222,7 @@ main {
 
 .panel.active h3 {
     opacity: 1;
-    transition: opacity 0.3s ease
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 720px) {
@@ -291,24 +236,23 @@ main {
     }
 }
 
-  .to-top {
+.to-top {
     background: #272021;
     color: #736f73;
     position: fixed;
     bottom: 16px;
-    right:32px;
-    width:50px;
-    height:30px;
+    right: 32px;
+    width: 50px;
+    height: 30px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:25px;
-    color:#e5f1f6;
-    text-decoration: none;
-    opacity:0;
-    pointer-events: none;
-    transition: all .4s ease;
+    font-size: 25px;
+    color: #e5f1f6;
+
+
+    
   }
   .to-top.active {
     bottom:32px;
