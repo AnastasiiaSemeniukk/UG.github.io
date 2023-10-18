@@ -306,24 +306,4 @@ p {
     body {
         overflow-x: hidden; 
     }
-
-    .mainpage,
-    .content,
-    .gallery,
-    .about,
-    .service,
-    .separator,
-    .contact {
-        width: 100%; 
-    }
-
-    .mainpage-img {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .mainpage {
-        grid-template-columns: 1fr;   
-    }
 }
-
