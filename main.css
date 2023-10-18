@@ -354,4 +354,15 @@ p {
    width: 700px;
     }
 }
- 
+
+
+@media (max-width: 768px) {
+    .contact, 
+    .service, 
+    .about {
+        background-color: #272021;
+    }
+    p {
+        background-color: #736f73;
+    }
+}
