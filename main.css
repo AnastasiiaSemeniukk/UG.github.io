@@ -340,20 +340,13 @@ h2 {
   
 }
 p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px; 
-  width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+    color: #e5f1f6;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    margin: 20px;
 }
-@media (max-width: 768px) {
-    p {
-   line-height: 32px;
-   text-align: justify;
-   width: 700px;
-    }
-}
+
 
 
 @media (max-width: 768px) {
@@ -363,6 +356,9 @@ p {
         background-color: #272021;
     }
     p {
+        background-color: #736f73;
+    }
+    .descr {
         background-color: #736f73;
     }
 }
