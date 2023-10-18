@@ -100,6 +100,7 @@ header {
     font-size: 16px;
     line-height: 1.9;
     margin: 20px; 
+    
 .mainpage-img {
     width: 750px;
     height: auto;
@@ -137,9 +138,10 @@ header {
 
 @media (max-width: 680px) {
     .mainpage-img img {
-        width: 100%;
-        height: auto;
-    }
+    width: 100%;
+    height: auto;
+}
+
 }
 
 main {
@@ -247,10 +249,7 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: #e5f1f6;
-
-
-    
+    color: #e5f1f6; 
   }
   .to-top.active {
     bottom:32px;
@@ -288,23 +287,7 @@ p {
     margin: 20px;
 }
 
-@media (max-width: 768px) {
-     .about,
-     .service, 
-     . contact { 
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-         background-color: #736f73;
-         width: 100vw;
-     }
-}
-    h1 {
-        font-size: 50px;
-    }
-.logo {
-    margin: 0;
-}
+
 @media (max-width: 680px) {
     body {
         overflow-x: hidden; 
