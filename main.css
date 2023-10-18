@@ -22,14 +22,14 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #272021;
-    padding: 15px; /* Added padding */
+    padding: 15px; 
     transition: .2s;
 }
 
 .logo {
     height: 55px;
     width: auto;
-    margin-left: 15px; /* Reduced margin */
+    margin-left: 15px; 
 }
 
 .navlist {
@@ -82,7 +82,7 @@ header {
     font-size: 20px;
     font-weight: 400;
     color: #e5f1f6;
-    margin: 20px; /* Removed duplicate margin property */
+    margin: 20px; 
     font-weight: bold;
 }
 
@@ -99,9 +99,7 @@ header {
     color: #e5f1f6;
     font-size: 16px;
     line-height: 1.9;
-    margin: 20px; /* Removed duplicate margin property */
-}
-
+    margin: 20px; 
 .mainpage-img {
     width: 750px;
     height: auto;
@@ -303,5 +301,29 @@ p {
 }
 .logo {
     margin: 0;
+}
+@media (max-width: 680px) {
+    body {
+        overflow-x: hidden; 
+    }
+
+    .mainpage,
+    .content,
+    .gallery,
+    .about,
+    .service,
+    .separator,
+    .contact {
+        width: 100%; 
+    }
+
+    .mainpage-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mainpage {
+        grid-template-columns: 1fr;   
+    }
 }
 
