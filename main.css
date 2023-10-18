@@ -344,5 +344,6 @@ p {
         gap: 1rem;
         grid-template-columns: 1fr;
          background-color: #736f73;
+         width: 100vw;
      }
 
