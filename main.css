@@ -301,4 +301,7 @@ p {
          width: 100vw;
      }
 }
+.logo {
+    margin: 0;
+}
 
