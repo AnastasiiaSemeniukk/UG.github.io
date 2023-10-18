@@ -67,8 +67,7 @@ header {
 }
 
 .mainpage {
-    height: 100%;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     position: relative;
     display: grid;
@@ -214,7 +213,6 @@ main {
  .service { 
     background-color: #736f73;
     min-height: 50vh;
-    width: 150%;
     display: flex;
     justify-content: center;
     text-align: center;
