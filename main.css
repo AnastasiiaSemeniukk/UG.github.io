@@ -192,7 +192,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-   min-height: 100vh;
     background-color: #272021;
     color: #e5f1f6;
     margin-top: 60px;
@@ -207,6 +206,7 @@ main {
 
  .about,
  .service { 
+     width: 100vw;
     background-color: #736f73;
     min-height: 50vh;
     display: flex;
@@ -337,7 +337,9 @@ p {
 }
 
 @media (max-width: 768px) {
-     .about { 
+     .about,
+     .service, 
+     . contact { 
          min-width:100vw;
          background-color: #736f73;
      }
