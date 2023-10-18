@@ -208,34 +208,29 @@ main {
     display: block;
   }
   
- .about,
- .service { 
-    background-color: #736f73;
-    min-height: 50vh;
+.about,
+.service,
+.contact {
+    background-color: #737b73;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    flex-direction: column
-  }
-  
+    flex-direction: column;
+    width: 100%;
+}
+
+. about,
+. service {
+    max-height: 50vh;
+}
   .separator {
     border: 1px solid;
     margin: 20px 0;
     background-color: #736f73;
     width: 100vw;
   }
-  
-  .contact {
-    min-height: 100vh;
-    background-color: #736f73;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column
-  }
+
 
   .cards {
     display: flex;
@@ -278,7 +273,7 @@ main {
 
   @media (max-width: 720px) {
     .cards {
-            width: 100vw;
+            width: 200vw;
     }
 
     .panel:nth-of-type(4),.panel:nth-of-type(5){
