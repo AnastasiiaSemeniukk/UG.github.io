@@ -190,46 +190,9 @@ header {
     }
 }
 
-main {
-    flex-direction: column;
-    min-height: 100vh;
-    color: #e5f1f6;
-    margin-top: 60px;
-  }
-  
-  .gallery {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: block;
-  }
-  
-.about,
-.service,
-.contact {
-    background-color: #737b73;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    min-height: 100vh;
-    position: relative;
-}
 
-. about,
-. service {
-    max-height: 50vh;
-}
-  .separator {
-    border: 1px solid;
-    margin: 20px 0;
-    background-color: #736f73;
-    width: 100vw;
-  }
+
+
 
 
   .cards {
