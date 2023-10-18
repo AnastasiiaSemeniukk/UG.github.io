@@ -337,10 +337,8 @@ p {
 }
 
 @media (max-width: 768px) {
-     p {
-        background-color: #736f73;
-    }
-    .descr {
-        background-color: #736f73;
-    }
+     .about { 
+         min-width:100vw;
+         background-color: #736f73;
+     }
 
