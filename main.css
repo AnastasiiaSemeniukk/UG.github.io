@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +8,7 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #272021;
 }
@@ -22,7 +24,6 @@ header {
     justify-content: space-between;
     background-color: #272021;
 }
-
 
 .logo {
     height: 55px;
@@ -54,7 +55,6 @@ header {
     cursor: pointer;
     display: none;
 }
-
 .cta {
     color: #e5f1f6;
     padding: 9px 25px;
@@ -76,7 +76,6 @@ header {
     gap: 2rem;
 }
 
-
 .mainpage-text h3{
     font-size: 20px;
     font-weight: 400;
@@ -84,7 +83,6 @@ header {
     margin: 40px;
     font-weight: bold;
 }
-
 .mainpage-text h1{
     font-weight: bold;
     font-size: 90px;
@@ -121,9 +119,10 @@ header {
         transition: .2s;
     }
 }
+
 @media (max-width: 1340px) {
-    .mainpage-img img{
-        width: 100%;
+  .mainpage-img img{
+       width: 100%;
         height: auto;
     }
     .mainpage-text h1 {
@@ -132,9 +131,9 @@ header {
     }
     .mainpage-text h3 {
         margin-bottom: 25px;
-
     }
 }
+
 @media (max-width: 1195px) {
     section {
         padding: 0 3%;
@@ -156,6 +155,7 @@ header {
         grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 990px) {
     #menu-icon {
         display: block;
@@ -179,10 +179,9 @@ header {
         margin: 7px 0;
     }
     .navlist.open {
-        right: 0%;
-    }
+     right: 0%;
+   }
 }
-
 @media (max-width: 680px) {
     .mainpage-img img {
         width: 100%;
@@ -190,16 +189,55 @@ header {
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+   min-height: 100vh;
+    background-color: #272021;
+    color: #e5f1f6;
+    margin-top: 60px;
+  }
 
+  .gallery {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+  }
 
+ .about,
+ .service { 
+    background-color: #736f73;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column
+  }
 
+  .separator {
+    border: 1px solid;
+    margin: 20px 0;
+    background-color: #736f73;
+    width: 100vw;
+  }
 
+  .contact {
+    min-height: 100vh;
+    background-color: #736f73;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column
+  }
 
   .cards {
     display: flex;
-    width: 90vw;
+    width: 100vw;
   }
-  
   .panel {
     background-size: cover;
     background-position: center;
@@ -213,36 +251,35 @@ header {
     position: relative;
     transition: 0.7s ease-in;
   }
-  
-  
+
   .panel h3 {
       font-size: 24px;
       position: absolute;
       bottom: 35px;
-      left: 35зч;
+      left: 35px;
       margin: 0;
-      opacity: 0;
-  
+      opacity: 0.3;
   }
-  
+
   .panel.active {
       flex:5;
   }
-  
+
   .panel.active h3 {
       opacity: 1;
       transition: opacity 0.3s ease-in 0.4s;
   }
 
-  @media (max-width: 720px) {
-    .cards {
-            width: 200vw;
-    }
 
+  @media (max-width: 720px) 
+    .cards {
+            width: 100vw;
+    }
     .panel:nth-of-type(4),.panel:nth-of-type(5){
         display: none;
     }
 }
+
 
   .to-top {
     background: #272021;
@@ -263,25 +300,20 @@ header {
     pointer-events: none;
     transition: all .4s ease;
   }
-  
-  
-  
   .to-top.active {
     bottom:32px;
     pointer-events: auto;
     opacity:1;
     transition: all .4s ease;
   }
-
   .descr a {
     cursor: pointer;
     color: #272021;
  }
- 
+
  .descr a:hover {
    color: peachpuff;
  }
- 
  .descr {
    line-height: 32px;
    text-align: justify;
@@ -295,7 +327,6 @@ h2 {
     margin-top: 20px;
     place-items: center;
     margin-bottom: 50px;
-  
 }
 p {
     color: #e5f1f6;
@@ -305,18 +336,11 @@ p {
     margin: 20px;
 }
 
-
-
 @media (max-width: 768px) {
-    .contact, 
-    .service, 
-    .about {
-        background-color: #272021;
-    }
-    p {
+     p {
         background-color: #736f73;
     }
     .descr {
         background-color: #736f73;
     }
-}
+
