@@ -150,6 +150,10 @@ header {
 }
 
 @media (max-width: 680px) {
+    .mainpage {
+        width: 80wv;
+    }
+
     .mainpage-img img {
         width: 70%;
         height: auto;
@@ -325,5 +329,8 @@ p {
      text-align: justify;
      max-width: 100%;
      margin: 0 auto; 
+    }
+    body {
+        overflow-x: hidden; 
     }
 }
