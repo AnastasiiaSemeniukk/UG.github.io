@@ -13,38 +13,37 @@ body {
 }
 
 header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #272021;
-    padding: 15px; 
-    transition: .2s;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #272021;
+        padding: 10px 20px; 
+        transition: .2s;
 }
 
 .logo {
     height: 55px;
     width: auto;
-    margin-left: 15px; 
 }
 
 .navlist {
     display: flex;
 }
 
-.navlist a {
+.navlist a{
     color: #e5f1f6;
-    margin-left: 15px;
+    margin-left: 60px;
+    margin-right: 80px;
     font-size: 15px;
     font-weight: 400;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2 px solid transparent;
     transition: all .55s ease;
 }
-
 .navlist a:hover {
     border-bottom: 2px solid #272021;
 }
@@ -59,13 +58,14 @@ header {
 
 .cta {
     color: #e5f1f6;
-    padding: 9px 15px;
+    padding: 9px 25px;
     background-color: #736f73;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-size: 16px;
+    margin-left: auto;
 }
 
 .mainpage {
@@ -81,9 +81,11 @@ header {
 .mainpage-text h3 {
     font-size: 20px;
     font-weight: 400;
-    color: #e5f1f6;
+    color: peachpuff;
     margin: 20px; 
     font-weight: bold;
+    text-decoration: underline;
+
 }
 
 .mainpage-text h1 {
@@ -135,18 +137,42 @@ header {
     .navlist.open {
         right: 0%;
     }
+    .mainpage {
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 80px; 
+    }
 }
 
 @media (max-width: 680px) {
     .mainpage-img img {
-    width: 100%;
-    height: auto;
-}
-    . mainpage-text h1 {
-        font-size: 55px;
+        width: 70%;
+        height: auto;
     }
-
+    
+    .mainpage-text h1 {
+        font-size: 38px; 
+        margin: 20px; 
+    }
+    .mainpage-text h3,
+    .mainpage-text p {
+        font-size: 16px; 
+        margin: 20px; 
+    }
+    .mainpage-text p {
+        line-height: 32px;
+        text-align: left;
+        max-width: 60%;
+        margin: 20px;
+    }
+   
 }
+
 
 main {
     display: flex;
@@ -161,6 +187,8 @@ main {
     min-height: 100vh;
     position: relative;
     display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .about,
@@ -194,7 +222,7 @@ main {
 
 .cards {
     display: flex;
-    width: 100vw;
+    width: 90vw;
 }
 
 .panel {
@@ -291,4 +319,11 @@ p {
     margin: 20px;
 }
 
-
+@media (max-width: 720px) {
+    .descr {
+      line-height: 32px;
+     text-align: justify;
+     max-width: 100%;
+     margin: 0 auto; 
+    }
+}
