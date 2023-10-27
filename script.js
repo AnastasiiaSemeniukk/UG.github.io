@@ -9,7 +9,7 @@ menu.onclick = () => {
 window.addEventListener("scroll", function() {
     var header = document.querySelector('header');
     var scrolled = window.scrollY;
-    var firstPageHeight = document.getElementById('mainpage').offsetHeight;
+    var firstPageHeight = document.getElementById('.mainpage').offsetHeight;
     var headerHeight = header.offsetHeight;
 
     if (scrolled > firstPageHeight - headerHeight) {
@@ -59,7 +59,6 @@ document.getElementById('contactbtn').addEventListener('click', function() {
                 showPanel(currentIndex);
             });
         });
-        
         showPanel(currentIndex);
 
 
