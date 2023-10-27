@@ -4,28 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactbtn = document.getElementById('contactbtn');
     const navLinks = document.querySelectorAll('.navlist li a');
 
-    const firstPage = document.querySelector('.mainpage');
-    const firstPageHeight = firstPage.offsetHeight;
-
-    window.addEventListener('scroll', function () {
-        const headerHeight = header.offsetHeight;
-
-        if (window.scrollY > firstPageHeight - headerHeight) {
-            header.style.backgroundColor = '#736f73';
-            logo.src = 'img/logo2.png';
-            contactbtn.style.backgroundColor = '#272021';
-            navLinks.forEach(link => {
-                link.style.color = '#272021';
-            });
-        } else if (window.scrollY > 50) {
-            header.style.backgroundColor = '#272021';
-            logo.src = 'img/logo.png';
-            contactbtn.style.backgroundColor = '#abb1b9';
-            navLinks.forEach(link => {
-                link.style.color = '#e5f1f6';
-            });
-        }
-    });
 
     let menu = document.querySelector('#menu-icon');
     let navlist = document.querySelector('.navlist');
