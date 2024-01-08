@@ -1,0 +1,261 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --primary-color: #272021;
+  --accent-color: #736f73;
+  --text-color: #e5f1f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color) ;
+  overflow-x: hidden;
+}
+
+
+header { 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 20%, rgba(0, 0, 0, 0.0) 20%, #270212 70%, #270212);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  transition: .2s;
+  z-index: 100;
+  animation: gradientAnimation 1s linear forwards;
+}
+
+.logo {
+  position: relative;
+  height: 45px;
+  transition: all 0.2s ease-in;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  transform-origin: center; 
+}
+
+.navbar a {
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px; 
+  transition: text-decoration 0.3s ease; 
+}
+
+.navbar a:hover, 
+.navbar a.active {
+  color: #d1acb1;
+  text-decoration: underline; 
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  text-align: end;
+}
+
+.content img {
+max-height: 70vh;
+padding-right: 20px;
+}
+
+.about {
+  max-width: 600px;
+}
+
+.about h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.about h1 span {
+  font-size: 50px;
+  color: #d1acb1;
+}
+
+.about h2 {
+  font-size: 32px;
+  font-weight: 600px;
+  color: var(--accent-color);
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.service {
+  width: 100vw;
+  min-height: 50vh;
+  background-color: var(--accent-color);
+  background: linear-gradient(to left,  rgba(0, 0, 0, 0.0) 10%, #736f73 90%, #736f73);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.service-text {
+  width: 40vw; 
+}
+
+.service h2 {
+  color: #270212;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600px;
+}
+
+.service img {
+  width: 30vw;
+  height: 30vh;
+  margin-left: 10%;
+}
+.gallery {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-position: center center;
+  background-size: cover;
+  transition: 0.4s;
+}
+
+.gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery h2 {
+  font-size: 32px;
+  color: #d1acb1;
+  z-index: 0;
+}
+
+.slider-container {
+  height: 800px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  position: absolute;
+  top: -15vh;
+  left: -15vw;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  border: 1px solid #270212;
+  border-radius: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arrow:focus {
+  outline: 0;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+
+
+.contact {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #d1acb1;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #d1acb1;
+}
+
+.contact a:hover {
+  color: #270212;
+}
+
+.contact i {
+  color: #d1acb1;
+}
+
+
+
+
+/* keyframes animation */
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
