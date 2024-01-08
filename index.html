@@ -1,111 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Usługi glazurnicze</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png"> <!--favicon-->
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><!--google fonts link-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <!--favicon-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--google fonts link-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <!--fontawesome link-->
 </head>
+
 <body>
- <!-- Header and menu -->
-    <header  >
+    <!-- Header and menu -->
+    <header id="header">
         <a href="index.html">
-            <img class="logo" src="img/logo.png" alt="logopicture"> 
+            <img class="logo" src="img/logo.png" alt="logopicture" href="index.html">
         </a>
-        <ul class="navlist">
-            <li><a href="#about" class="smoothScroll">O nas</a></li>
-            <li><a href="#service" class="smoothScroll">Nasze usługi</a></li>
-            <li><a href="#gallery" class="smoothScroll">Nasze prace</a></li>
-            <li><a class="cta" href="#contact" id="contactbtn">Kontakt</a></li>
-        </ul>
-        
-        <div id="menu-icon"><i class="fa fa-solid fa-bars"></i></div>
+        <nav class="navbar">
+            <a href="index.html" class="smoothScroll active">O nas</a>
+            <a href="#service" class="smoothScroll">Nasze usługi</a>
+            <a href="#gallery" class="smoothScroll">Nasze prace</a>
+            <a href="#contact" class="smoothScroll">Kontakt</a>
+        </nav>
     </header>
-<!--main-->
-<main>
-    <section class="mainpage">
-        <div class="mainpage-text">
-            <h1 class="title">Usługi glazurnicze</h1>
-                <h3>Jakość i doświadczenie</h3>
-                <p>Zawsze dążymy do najwyższej jakości i wykonujemy nasze usługi z dbałością o szczegóły, aby zadowolić potrzeby naszych klientów. Nasze doświadczenie i profesjonalizm to nasza duma.</p>
-                </div>
-        <div class="mainpage-img">
-            <img src="img/work1.jpg" alt="work from portfolio">
+    <main>
+        <section class="content">
+            <img src="img/work1.jpg" alt="Bathroom">
+            <div class="about" id="about">
+                <h1>Witam, <br> jesteśmy firmą <br> <span>"Usługi Glazurnicze"</span></h1>
+                <h2>O nas</h2>
+                <p class="descrp">Specjalizujemy się w usługach układania różnego rodzaju płytek o różnym stopniu trudności. Nasz zespół ma wieloletnie doświadczenie w branży i zawsze stawia jakość i profesjonalizm na pierwszym miejscu.</p>
+            </div>
+        </section>
+        <div class="service" id="service">
+            <div class="service-text">
+                <h2>Nasze usługi</h2>
+                <p class="descrp">Układanie płytek różnego rodzaju<br> Tworzenie wymarzonej łazienki, która spełni oczekiwania każdego klienta.</p>
+            </div>
+            <img src="img/tile-icon.png" alt="tile-icon">
         </div>
-    </section>
-    <section class="content">
-    <div class="about" id="about">
-            <h2>O nas</h2>
-            <p class="descrp">Specjalizujemy się w usługach układania różnego rodzaju płytek o różnym stopniu trudności. Nasz zespół ma wieloletnie doświadczenie w branży i zawsze stawia jakość i profesjonalizm na pierwszym miejscu.</p>
-    </div>
-    </section>
-    <hr class="separator">
-    <div class="service" id="service" >
-            <h2>Nasze usługi</h2>
-            <p class="descrp">Układanie płytek różnego rodzaju<br> Tworzenie wymarzonej łazienki, która spełni oczekiwania każdego klienta.</p>
-    </div>
-    <div class="gallery" id="gallery"> 
-        <h2>Gallery</h2>
-        <div class="cards">
-            <div class="panel active" style="background-image: url('img/work-2.jpg')">
-              <h3>Wykończona łazienka</h3>
+        <section class="gallery" id="gallery">
+            <h2>Gallery</h2>
+            <div class="slider-container">
+                <div
+                  class="slide active"
+                  style="
+                    background-image: url('img/work-2.jpg');
+                  "
+                ><h3>Wykończona łazienka</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-3.jpg');
+                  "
+                ><h3>Wykończona łazienka</h3></div>
+          
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-4.jpg');
+                  "
+                ><h3>Wykończona łazienka</h3></div>
+          
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-5.jpg');
+                  "
+                ><h3>Schody</h3></div>
+          
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-6.jpg');
+                  "
+                ><h3>Wykończona łazienka</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-7.jpg');
+                  "
+                ><h3>Wykończona łazienka</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-8.jpg');
+                  "
+                > <h3>Wykończona łazienka</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-9.jpg');
+                  "
+                > <h3>Wykończona łazienka</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-10.jpg');
+                  "
+                ><h3>Ułożone płytki</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-11.jpg');
+                  "
+                ><h3>Ułożone płytki</h3></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('img/work-12.jpg');
+                  "
+                > <h3>Ułożone płytki</h3></div>
             </div>
-            <div class="panel" style="background-image: url('img/work-3.jpg')">
-              <h3>Wykończona łazienka </h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-4.jpg')">
-              <h3>Wykończona łazienka</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-5.jpg')">
-              <h3>Schody</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-6.jpg')">
-                <h3>Wykończona łazienka</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-7.jpg')">
-                <h3>Wykończona łazienka</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-8.jpg')">
-                <h3>Wykończona łazienka</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-9.jpg')">
-                <h3>Wykończona łazienka</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-10.jpg')">
-                <h3>Ułożone płytki</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-11.jpg')">
-                <h3>Ułożone płytki</h3>
-            </div>
-            <div class="panel" style="background-image: url('img/work-12.jpg')">
-                <h3>Ułożone płytki</h3>
-            </div>
-          </div>
-    </div>
+                <button class="arrow left-arrow" id="left">
+                  <i class="fas fa-arrow-left"></i>
+                </button>
+            
+                <button class="arrow right-arrow" id="right">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+        </section>
         <div class="contact" id="contact">
-          <h2>Kontakt</h2>
-          <p class="descr">
-            <i class="fa fa-key"></i> NIP (numer identyfikacji podatkowej): 9721341291<br>
-            <i class="fa fa-globe"></i> REGON (krajowy numer rejestracyjny): 525762150<br>
-            <i class="fa fa-city"></i> Adres: 61-619 Poznań, Ul Karpia 22E/53<br>
-            <i class="fa fa-phone"></i> Telefony:<br>
-            <i class="fa fa-user"></i> Kateryna Laziuk: <a href="tel:+4888646033">+4888646033</a> <br>
-            <i class="fa fa-user"></i> Ivan Laziuk: <a href="tel:+48888380783">+48888380783</a><br> 
-            <i class="fa fa-envelope"></i> E-mail kontaktowy: <a href="mailto:Koxanadruzina@gmail.com">Koxanadruzina@gmail.com</a>
-          </p>
-    </div>
-    <a href="#" class="to-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-</main>
+            <h2>Kontakt</h2>
+            <p class="descr">
+                <i class="fa fa-key"></i> NIP (numer identyfikacji podatkowej): 9721341291<br>
+                <i class="fa fa-globe"></i> REGON (krajowy numer rejestracyjny): 525762150<br>
+                <i class="fa fa-city"></i> Adres: 61-619 Poznań, Ul Karpia 22E/53<br>
+                <i class="fa fa-phone"></i> Telefony:<br>
+                <i class="fa fa-user"></i> Kateryna Laziuk: <a href="tel:+4888646033">+4888646033</a> <br>
+                <i class="fa fa-user"></i> Ivan Laziuk: <a href="tel:+48888380783">+48888380783</a><br>
+                <i class="fa fa-envelope"></i> E-mail kontaktowy: <a href="mailto:Koxanadruzina@gmail.com">Koxanadruzina@gmail.com</a>
+            </p>
+        </div>
+    </main>
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
