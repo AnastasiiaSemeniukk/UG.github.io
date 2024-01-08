@@ -1,33 +1,59 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header');
-    const logo = document.querySelector('.logo');
-    const contactbtn = document.getElementById('contactbtn');
-    const navLinks = document.querySelectorAll('.navlist li a');
+const gallery = document.querySelector('.gallery')
+const slides = document.querySelectorAll('.slide')
+const leftBtn = document.getElementById('left')
+const rightBtn = document.getElementById('right')
+
+let activeSlide = 0
+
+rightBtn.addEventListener('click', () => {
+  activeSlide++
+
+  if (activeSlide > slides.length - 1) {
+    activeSlide = 0
+  }
+
+  setBgToGallery()
+  setActiveSlide()
+})
+
+leftBtn.addEventListener('click', () => {
+  activeSlide--
+
+  if (activeSlide < 0) {
+    activeSlide = slides.length - 1
+  }
+
+  setBgToGallery()
+  setActiveSlide()
+})
+
+setBgToGallery()
+
+function setBgToGallery() {
+  gallery.style.backgroundImage = slides[activeSlide].style.backgroundImage
+}
+
+function setActiveSlide() {
+  slides.forEach((slide) => slide.classList.remove('active'))
+
+  slides[activeSlide].classList.add('active')
+}
 
 
-    let menu = document.querySelector('#menu-icon');
-    let navlist = document.querySelector('.navlist');
+const menuLinks = document.querySelectorAll('.navbar a');
 
-    menu.onclick = () => {
-        menu.classList.toggle('bx-x');
-        navlist.classList.toggle('open');
-    };
 
-    document.getElementById('contactbtn').addEventListener('click', function () {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuLinks.forEach(item => {
+      item.classList.remove('active');
     });
 
-    const toTop = document.querySelector(".to-top");
-
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
-    });
-
-    function callNumber(phoneNumber) {
-        window.location.href = 'tel:' + phoneNumber;
-    }
+    link.classList.add('active');
+  });
 });
+
+
+function callNumber(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+}
